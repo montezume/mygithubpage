@@ -1,0 +1,134 @@
+.text-centered {
+    text-align: center;
+}
+
+.pure-menu-horizontal {
+    text-align: right;
+}
+
+a {
+    text-decoration: none;
+}
+
+a.white-no-decoration {
+    color: white;
+}
+
+.container {
+    padding: 0 3em 0 3em;
+}
+
+.l-box {
+    padding: 0 1em 0 1em;
+}
+/*
+ * -- BANNER --
+ * The top banner with the headings. By using a combination
+ * of `display: table;` and `display: table-cell;`, we can
+ * vertically center the text.
+ */
+
+.background-banner {
+    background: transparent url('../assets/images/cappadocia1.png');
+}
+
+.banner {
+    background-position: right bottom fixed;
+    text-align: center;
+    background-size: cover;
+    filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='../assets/images/cappadocia1.png', sizingMethod='scale');
+    height: 200px;
+    width: 100%;
+    margin-bottom: 1em;
+    display: table;
+}
+
+.banner-head {
+    display: table-cell;
+    vertical-align: middle;
+    margin-bottom: 0;
+    font-size: 2.5em;
+    color: white;
+    font-weight: 500;
+    text-shadow: 0 1px 1px black;
+}
+
+.icons i {
+  padding: 0 10px;
+
+}
+
+.contact-banner {
+    background: transparent url('../assets/images/istanbul.png');
+    background-position: right bottom fixed;
+    text-align: center;
+    background-size: cover;
+    filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='../assets/images/istanbul.png', sizingMethod='scale');
+    height: 200px;
+    width: 100%;
+    display: table;
+}
+
+    h1.contact-banner-head {
+        font-size: 2.5em;
+        font-weight: 500;
+        text-shadow: 0 1px 1px black;
+        color: white;
+    }
+    
+    contact-banner-head {
+        color: white;
+        display: table-cell;
+        vertical-align: middle;
+        margin-bottom: 0;
+    }
+    
+.footer {
+    background: #111;
+    color: #888;
+    text-align: center;
+}
+
+.footer a {
+    color: #ddd;
+}
+
+
+/*
+ * -- TABLET MEDIA QUERIES --
+ * On tablets, we want to slightly adjust the size of the banner
+ * text and add some vertical space between the various pricing tables
+ */
+@media(min-width: 767px) {
+
+    .banner-head {
+        font-size: 4em;
+    }
+    .pricing-table {
+        margin-bottom: 0;
+    }
+
+}
+
+/*
+ * -- PHONE MEDIA QUERIES --
+ * On phones, we want to reduce the height and font-size of the banner further
+ */
+ 
+@media (max-width: 480px) {
+    .container {
+        padding: 0px;
+    }
+    .pure-menu-horizontal {
+        text-align: center;
+    }
+ }
+@media (min-width: 480px) {
+    .banner {
+        height: 250px;
+    }
+    .banner-head {
+        font-size: 3em;
+    }
+}
+
